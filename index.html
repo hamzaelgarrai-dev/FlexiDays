@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>FlexiDays</title>
+</head>
+
+<body class="bg-[#F5F7FF]">
+
+
+    <div class="header bg-white  top-0 left-0 w-full z-50  shadow-md ">
+        <div class="nav h-22 max-w-[1050px] flex justify-between items-center mx-auto  ">
+            <div class="logo text-2xl font-bold text-[#504B8E]">FlexiDays</div>
+            <div class="links ">
+                <ul class="flex justify-between items-center w-120 text-[14.5px] text-[#6C7383]">
+                    <li>Dashboard</li>
+                    <li>Mes Conge</li>
+                    <li>Demande de conge</li>
+                    <li>Administration</li>
+
+                </ul>
+            </div>
+            <div class="profile ">
+                <ul class="flex space-x-6">
+
+                    <li><i class="fa-solid fa-bell"></i></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="main  max-w-[1050px] w-full h-220 flex-col mx-auto">
+
+        <div class="heading flex-col items-start mt-12 mb-10   ">
+
+            <h1 class="font-semibold text-2xl">Tableau de Board</h1>
+            <p>Bienvenue, gerez vos conges et suivez vos demandes</p>
+
+        </div>
+
+        <div class="notification relative  flex w-full justify-between h-45 rounded-2xl bg-white mb-10 shadow-md">
+            <h2 class="p-4 pl-6">Notification Importantes</h2>
+            <div class="btn-div flex flex-row pr-6">
+                <div class="leftbtn p-2 mt-2 "><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="rightbtn p-2 mt-2 "><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div
+                class="notif-content absolute top-26 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl bg-[#D2E7FE] h-25 w-255">
+            </div>
+
+        </div>
+
+        <div class="info-cards flex items-center justify-between  w-full h-60  mb-10  ">
+
+            <div class="card w-80 h-50 rounded-2xl bg-white shadow-md">
+                <h2 class="p-4 pl-6 font-semibold">Solde de Conge</h2>
+
+                <div class="details flex justify-between px-6 leading-8 items-center pt-4">
+                    <div class="firstrow">
+                        <p>Conges Payes</p>
+                        <p>RTT</p>
+                        <p>Conges maladie</p>
+                    </div>
+                    <div class="secondrow">
+                        <p>25 Jours</p>
+                        <p>8 Jours</p>
+                        <p>5 Jours</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="card w-80 h-50 rounded-2xl bg-white shadow-md">
+                <h2 class="p-4 pl-6 font-semibold">Demandes en cours</h2>
+
+                <div class="details flex justify-between px-6 leading-8 items-center pt-4">
+                    <div class="firstrow">
+                        <p>En attente</p>
+                        <p>Approuvées</p>
+                        <p>Refusées</p>
+                    </div>
+                    <div class="secondrow">
+                        <p>2</p>
+                        <p>5</p>
+                        <p>0</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="card w-80 h-50 rounded-2xl bg-white bg shadow-md">
+                <h2 class="p-4 pl-6 font-semibold">Prochains congés</h2>
+
+                <div class="details flex justify-between px-6 leading-5 items-center pt-4">
+                    <div class="firstrow">
+
+                        <div class="mb-1">
+                            <p cl>Congés d’été</p>
+                            <p>15 - 30 juillet 2025</p>
+
+                        </div>
+
+                        <div>
+
+                            <p>Pont de mai</p>
+                            <p>1 - 2 mai 2025</p>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="action relative   w-full  flex items-center justify-betweenh h-50 rounded-2xl bg-white mb-18 shadow-md">
+            <h2 class="p-4 pl-6 absolute top-8 left-20 -translate-x-1/2 -translate-y-1/2">Actions rapides</h2>
+
+            <div class="btn-container flex items-center justify-around  w-full  mt-9">
+
+                <div class="card w-60 h-30 rounded-2xl bg-white border border-black flex justify-center items-center">
+
+                    <div class="flex flex-col  items-center  ">
+
+                        <i class="fa-solid fa-plus"></i> 
+                        <p class="pt-2">Nouvelle Demande</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card w-60 h-30 rounded-2xl bg-white border border-black flex justify-center items-center">
+                    <div class="flex flex-col  items-center  ">
+
+                        <i class="fa-solid fa-calendar-days"></i> 
+                        <p class="pt-2">Mes congés</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card w-60 h-30 rounded-2xl bg-white border border-black flex justify-center items-center">
+                    <div class="flex flex-col  items-center  ">
+
+                        <i class="fa-solid fa-chart-simple"></i> 
+                        <p class="pt-2">Statistiques</p>
+
+                    </div>
+                </div>
+
+                <div class="card w-60 h-30 rounded-2xl bg-white border border-black flex justify-center items-center">
+                    <div class="flex flex-col  items-center  ">
+
+                        <i class="fa-solid fa-gear"></i>
+                        <p class="pt-2">Paramètres</p>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
