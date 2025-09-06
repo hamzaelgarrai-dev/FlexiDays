@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Demande conge</title>
+</head>
+
+<body class="bg-[#FAFAFA]">
+
+
+    <div class="header bg-white  top-0 left-0 w-full z-50  shadow-md ">
+        <div class="nav h-22 max-w-[1050px] flex justify-between items-center mx-auto  ">
+            <div class="logo text-2xl font-bold text-[#504B8E]">FlexiDays</div>
+            <div class="links ">
+                <ul class="flex justify-between items-center w-120 text-[14.5px] text-[#6C7383]">
+                    <li> <a href="/Dashboard.html">Dashboard</a></li>
+                    <li><a href="/mes-conges.html">Mes Conge</a></li>
+                    <li> <a href="/Dashboard.html">Demande de conge</a></li>
+                    <li><a href="/Administration.html">Administration</a></li>
+
+                </ul>
+            </div>
+            <div class="profile ">
+                <ul class="flex space-x-4">
+
+                    <li><i class="fa-solid fa-bell text-3xl text-gray-700"></i></li>
+                    <li><i class="fa-solid fa-user text-3xl text-gray-700"></i></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main  max-w-[750px] w-full h-340 flex-col mx-auto">
+        <div class="heading flex-col items-start mt-12 mb-10   ">
+
+            <h1 class="font-semibold text-2xl text-[#111827]">Nouvelle demande de congé</h1>
+            <p class="text-[#4B5563]">Remplissez le formulaire ci-dessous pour soumettre votre demande de congé.</p>
+
+        </div>
+
+        <div class="flex flex-col mx-auto justify-between w-[750px]  h-195 rounded-2xl bg-white p-6 mb-10 shadow-md">
+
+
+            <form action="" class="max-w-[750px] mx-auto">
+
+                <div class="flex justify-between items-center w-full h-30   ">
+
+                    <div class="w-65">
+                        <label for="Date-début"
+                            class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">Date de début</label>
+                        <input type="date" id="Date-début"
+                            class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="jj/mm/aaaa" required />
+                    </div>
+                    <div class="w-65">
+                        <label for="Date-fin" class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">Date
+                            de fin</label>
+                        <input type="date" id="Date-fin"
+                            class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="jj/mm/aaaa" required />
+                    </div>
+
+
+
+                </div>
+                <div class="flex justify-around items-center w-full h-30 ">
+
+                    <div class="w-full">
+                        <label for="Type-congé"
+                            class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">Type de congé</label>
+                        <select id="Type-congé"
+                            class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                            <option value="">Sélectionnez un type de congé</option>
+                            <option value="payes">Congés payés</option>
+                            <option value="sans-solde">Congé sans solde</option>
+                        </select>
+                    </div>
+
+
+                </div>
+                <div class="flex justify-around items-center w-full h-50 ">
+
+                    <div class="w-full">
+                        <label for="Justification"
+                            class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">
+                            Justification
+                        </label>
+                        <textarea id="Justification" rows="5" maxlength="500"
+                            placeholder="Décrivez la raison de votre demande de congé..." class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg 
+           focus:ring-blue-500 focus:border-blue-500 block w-full p-3 resize-none" required></textarea>
+                        <label for="Justification"
+                            class="block mt-2 text-sm font-medium text-[#111827] dark:text-white">
+                            Maximum 500 caractères
+                        </label>
+                    </div>
+
+
+                </div>
+
+                <div class="flex justify-around items-center w-full h-40 ">
+
+                    <div class="">
+
+                        <div
+                            class="rounded-3xl bg-[#E0F2FE] border border-[#60A5FA]  w-140 h-30 flex items-start justify-start p-4">
+                            <div class="pr-2 pt-1"><i class="fa-solid fa-circle-exclamation"></i></div>
+                            <div class="flex flex-col text-[#4B5563] ">
+                                <p class="">Information importante :</p>
+                                <p class="">Votre demande sera transmise à votre manager pour validation. Vous recevrez
+                                    une
+                                    notification par email une fois la décision prise.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="flex justify-around items-center w-full h-30  ">
+
+                    <div class="flex items-center justify-center bg-[#5B57D9] w-65 h-16 rounded-xl text-white gap-x-3 cursor-pointer"><i class="fa-solid fa-paper-plane"></i>
+                        Soumettre la demande</div>
+                    <div class="flex items-center justify-center  w-65 h-16 rounded-xl border border-black gap-x-3 cursor-pointer"><i class="fa-solid fa-rotate-left"></i>
+                        Réinitialiser</div>
+
+
+
+                </div>
+
+
+            </form>
+
+
+
+
+
+
+        </div>
+
+        <div class="flex-col w-full justify-between h-80  rounded-2xl bg-white mb-10 shadow-md">
+            <h2 class=" pt-8 pl-6 text-[#111827] text-[17px] font-medium ">Mes dernières demandes</h2>
+
+            <div class=" w-[700px] h-25 flex items-center justify-between mx-auto ">
+                <div class="flex items-center justify-center">
+                    <div class="bg-black w-2.5 h-2.5 rounded-full mr-2"></div>
+                    <div class="flex-col">
+                        <p class="text-[#111827]">Congés payés </p>
+                        <p class="text-[#4B5563]">15/03/2025 → 19/03/2025 </p>
+                    </div>
+
+                </div>
+                <div class="bg-[#FACC15]/40 backdrop-blur-md w-26 h-9 rounded-xl 
+            flex items-center justify-center 
+            border border-white/20 shadow-md text-black">
+                    En attente
+                </div>
+            </div>
+
+            <div class="w-[700px] h-[0.5px] bg-[#4B5563]  mx-auto "></div>
+
+            <div class=" w-[700px] h-25 flex items-center justify-between mx-auto ">
+                <div class="flex items-center justify-center">
+                    <div class="bg-black w-2.5 h-2.5 rounded-full mr-2"></div>
+                    <div class="flex-col">
+                        <p class="text-[#111827]">Congé personnel</p>
+                        <p class="text-[#4B5563]">08/02/2025 → 08/02/2025</p>
+                    </div>
+
+                </div>
+                <div class="bg-[#22C55E]/40 backdrop-blur-md w-26 h-9 rounded-xl 
+            flex items-center justify-center 
+            border border-white/20 shadow-md text-black">
+    Approuvé
+</div>
+            </div>
+
+            <div class="w-[700px] h-[0.5px] bg-[#4B5563]  mx-auto "></div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="footer bg-white  bottom-0 h-60 left-0 w-full z-50  p-8 shadow-md">
+
+        <div class="container max-w-[1050px]  h-40 flex mx-auto justify-between items-start">
+
+            <div>
+                <h2 class="mb-2 font-semibold">Ressources Humaines</h2>
+                <p>Service RH</p>
+                <p>rh@enterprise.com</p>
+                <p>01 23 45 67 89</p>
+            </div>
+
+            <div>
+                <h2 class="mb-2 font-semibold">Adresse</h2>
+                <p>123 Rue de l’Entreprise</p>
+                <p>75001 Paris</p>
+                <p>France</p>
+            </div>
+            <div>
+                <h2 class="mb-2 font-semibold">Liens utiles</h2>
+                <p>Règlement intérieur</p>
+                <p>Convention collective</p>
+                <p>Support IT</p>
+            </div>
+            <div>
+                <h2 class="mb-2 font-semibold">Urgence</h2>
+                <p>En cas d’urgence:</p>
+                <p>urgence@enterprise.com</p>
+                <p>06 12 34 56 78</p>
+            </div>
+
+            </form>
+
+
+
+
+
+        </div>
+        <div class="w-[1050px] h-[1px] bg-gray-300 flex mx-auto mb-2"></div>
+
+        <div class="flex mx-auto w-80"> &copy; 2025 Entreprise. Tous droits réservés.</div>
+
+    </div>
+
+
+
+</body>
+
+</html>

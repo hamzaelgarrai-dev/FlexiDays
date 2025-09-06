@@ -12,25 +12,25 @@
     <title>Mes conges</title>
 </head>
 
-<body class="bg-[#F5F7FF]">
+<body class="bg-[#FAFAFA]">
 
     <div class="header bg-white  top-0 left-0 w-full z-50  shadow-md ">
         <div class="nav h-22 max-w-[1050px] flex justify-between items-center mx-auto  ">
             <div class="logo text-2xl font-bold text-[#504B8E]">FlexiDays</div>
             <div class="links ">
                 <ul class="flex justify-between items-center w-120 text-[14.5px] text-[#6C7383]">
-                    <li> <a href="/index.html">Dashboard</a></li>
+                    <li> <a href="/Dashboard.html">Dashboard</a></li>
                     <li><a href="/mes-conges.html">Mes Conge</a></li>
-                    <li>Demande de conge</li>
-                    <li>Administration</li>
+                    <li> <a href="/Demande-conge.html">Demande de conge</a></li>
+                    <li><a href="/Administration.html">Administration</a></li>
 
                 </ul>
             </div>
             <div class="profile ">
-                <ul class="flex space-x-6">
+                <ul class="flex space-x-4">
 
-                    <li><i class="fa-solid fa-bell"></i></li>
-                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-bell text-3xl text-gray-700"></i></li>
+                    <li><i class="fa-solid fa-user text-3xl text-gray-700"></i></li>
 
                 </ul>
 
@@ -43,128 +43,98 @@
 
         <div class="heading flex-col items-start mt-12 mb-10   ">
 
-            <h1 class="font-semibold text-2xl">Mes congés</h1>
-            <p>Consultez et gérez vos demandes de congés</p>
+            <h1 class="font-semibold text-2xl text-[#111827]">Mes congés</h1>
+            <p class="text-[#4B5563]">Consultez et gérez vos demandes de congés</p>
 
         </div>
 
-        <div class="status-container flex items-center justify-between  w-full  mt-9 mb-10">
-
-            <div class="card w-60 h-30 rounded-2xl bg-white shadow-md flex justify-center items-center">
-
-                <div class="flex  items-center  ">
-
+        <div class="status-container grid grid-cols-4 gap-6 w-full mt-9 mb-10 ">
+            <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500 text-2xl">
                     <i class="fa-solid fa-calendar-days"></i>
-                    <div class="p-4">
-                        <p class="pt-2">Solde restant </p>
-                        <p class="">23</p>
-
-                    </div>
-
-
-
-
                 </div>
-
-            </div>
-
-
-            <div class="card w-60 h-30 rounded-2xl bg-white shadow-md flex justify-center items-center">
-                <div class="flex   items-center  ">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" id="check">
-                        <path
-                            d="M16.084 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zm7.412 11.574-7.664 11.714c-.002.002-.006.004-.006.006-.04.06-.062.128-.112.184-.07.076-.16.116-.24.174-.02.014-.04.03-.062.044-.124.078-.252.13-.392.164-.046.012-.088.024-.136.032a1.35 1.35 0 0 1-.336.004 1.324 1.324 0 0 1-.234-.036 1.415 1.415 0 0 1-.23-.092c-.064-.03-.132-.038-.192-.076-.044-.028-.068-.072-.106-.106-.016-.014-.036-.018-.052-.032l-4.462-4.126a1.4 1.4 0 0 1 1.9-2.056l3.23 2.988 6.75-10.318a1.4 1.4 0 1 1 2.344 1.532z">
-                        </path>
-                    </svg>
-                    <div class="p-4">
-                        <p class="pt-2">Approuvés </p>
-                        <p class="">12</p>
-
-                    </div>
-
-
-
+                <div class="pl-4">
+                    <p class="text-[#4B5563] text-sm">Solde restant</p>
+                    <p class="text-[#111827] text-xl font-semibold">23</p>
                 </div>
             </div>
-
-
-            <div class="card w-60 h-30 rounded-2xl bg-white shadow-md flex justify-center items-center">
-                <div class="flex   items-center  ">
-
+            <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500 text-2xl">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="pl-4">
+                    <p class="text-[#4B5563] text-sm">Approuvées</p>
+                    <p class="text-[#111827] text-xl font-semibold">12</p>
+                </div>
+            </div>
+            <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500 text-2xl">
                     <i class="fa-solid fa-clock"></i>
-                    <div class="p-4">
-                        <p class="pt-2">En attente </p>
-                        <p class="">2</p>
+                </div>
+                <div class="pl-4">
+                    <p class="text-[#4B5563] text-sm">En attente</p>
+                    <p class="text-[#111827] text-xl font-semibold">3</p>
+                </div>
+            </div>
+            <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500 text-2xl">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="pl-4">
+                    <p class="text-[#4B5563] text-sm">Refusés</p>
+                    <p class="text-[#111827] text-xl font-semibold">1</p>
+                </div>
+            </div>
+        </div>
 
+
+
+
+
+        <div class="conge-info  flex-col w-full justify-between h-40 rounded-2xl bg-white mb-10 shadow-md">
+
+            <div class="flex items-center  ">
+                <h2 class="p-4 pl-6 text-lg font-semibold text-gray-800">Congés d’été</h2>
+                <div
+                    class="bg-[#FACC15]/40 backdrop-blur-md text-black text-xs px-3 py-1 rounded-xl h-7 flex items-center justify-center gap-x-2">
+                    <i class="fa-solid fa-clock"></i>
+                    En attente
+                </div>
+
+            </div>
+
+
+
+            <div class="w-250 mx-auto flex justify-between items-center">
+
+                <div class="flex flex-col items-start text-center w-48">
+                    <p class="text-gray-700">Du 15 juillet 2025</p>
+                    <p class="text-gray-700">Au 29 juillet 2025</p>
+                </div>
+                <div class="flex flex-col items-start text-center w-24">
+                    <p class="text-gray-500">Durée</p>
+                    <p class="text-gray-500">15 jours</p>
+                </div>
+
+                <div class="flex flex-col items-start text-center w-32">
+                    <p class="text-gray-500">Type</p>
+                    <p class="text-gray-500">Congés payés</p>
+                </div>
+                <div class="btn-div flex flex-col text-center space-y-2 w-46 items-end">
+                    <div
+                        class="w-28 h-9 rounded-xl flex items-center justify-center bg-[#4B49AC] text-white text-sm cursor-pointer shadow-sm gap-1">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Modifier
                     </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="card w-60 h-30 rounded-2xl bg-white shadow-md flex justify-center items-center">
-                <div class="flex   items-center  ">
-
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" id="close">
-                        <path
-                            d="M17 2C8.716 2 2 8.716 2 17s6.716 15 15 15 15-6.716 15-15S25.284 2 17 2zm6.95 9.464-5.574 5.574 4.932 5.498a1 1 0 0 1-1.414 1.414l-4.932-5.498-5.498 5.498a1 1 0 0 1-1.414-1.414l5.574-5.574-4.932-5.498a1 1 0 0 1 1.414-1.414l4.932 5.498 5.498-5.498a1 1 0 0 1 1.414 1.414z">
-                        </path>
-                    </svg>
-                    <div class="p-4">
-                        <p class="pt-2">Refusés </p>
-                        <p class="">1</p>
-
+                    <div
+                        class="w-28 h-9 rounded-xl flex items-center justify-center bg-gray-100 text-gray-800 text-sm cursor-pointer border border-gray-300 gap-1">
+                        <i class="fa-solid fa-trash"></i>
+                        Annuler
                     </div>
-
-
-
                 </div>
+
             </div>
 
-
-
-        </div>
-
-
-
-
-
-        <div class="conge-info  flex-col w-full justify-between h-40 rounded-2xl bg-white mb-10 shadow-md">
-
-            <h2 class="p-4 pl-6">Congés d’été</h2>
-
-
-            <div class="  w-250   mx-auto  flex justify-between items-center ">
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Du 15 juillet 2025</p>
-                    Au 29 juillet 2025
-
-                </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Durée</p>
-                    <p>15 jours</p>
-
-                </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Type</p>
-                    <p>Congés payés</p>
-
-                </div>
-
-
-                <div class="btn-div flex-col flex  text-center space-y-1 ">
-                    <div class="bg-[#4B49AC] w-26 h-9 rounded-xl ">Modifier</div>
-                    <div class="bg-[#F8F9FA] w-26 h-9 rounded-xl ">Annuler</div>
-                </div>
-
-
-            </div>
 
         </div>
 
@@ -175,152 +145,170 @@
 
         <div class="conge-info  flex-col w-full justify-between h-40 rounded-2xl bg-white mb-10 shadow-md">
 
-            <h2 class="p-4 pl-6">Congés d’été</h2>
-
-            <div class="  w-250 flex justify-between pl-6  ">
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Du 15 juillet 2025</p>
-                    Au 29 juillet 2025
-
+            <div class="flex items-center  ">
+                <h2 class="p-4 pl-6 text-lg font-semibold text-gray-800">Congés d’été</h2>
+                <div
+                    class="bg-[#22C55E]/40 backdrop-blur-md text-black text-xs px-3 py-1 rounded-xl h-7 flex items-center justify-center gap-x-2">
+                    <i class="fa-solid fa-check"></i>
+                    Approuvé
                 </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Durée</p>
-                    <p>15 jours</p>
-
-                </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Type</p>
-                    <p>Congés payés</p>
-
-                </div>
-
-
-                <div class="btn-div flex-col flex  text-center  -mt-8 ">
-                    <p>Lorem ipsum dolor sit.</p>
-                </div>
-
-
-
-                
-
 
             </div>
 
-        </div>
-        <div class="conge-info  flex-col w-full justify-between h-40 rounded-2xl bg-white mb-10 shadow-md">
 
-            <h2 class="p-4 pl-6">Congés d’été</h2>
+            <div class="w-250 mx-auto flex justify-between items-center">
 
-            <div class="  w-250 flex justify-between pl-6  ">
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Du 15 juillet 2025</p>
-                    Au 29 juillet 2025
-
+                <div class="flex flex-col items-start text-center w-48">
+                    <p class="text-gray-700">Du 15 juillet 2025</p>
+                    <p class="text-gray-700">Au 29 juillet 2025</p>
+                </div>
+                <div class="flex flex-col items-start text-center w-24">
+                    <p class="text-gray-500">Durée</p>
+                    <p class="text-gray-500">15 jours</p>
                 </div>
 
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Durée</p>
-                    <p>15 jours</p>
-
+                <div class="flex flex-col items-start text-center w-32">
+                    <p class="text-gray-500">Type</p>
+                    <p class="text-gray-500">Congés payés</p>
                 </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Type</p>
-                    <p>Congés payés</p>
-
+                <div class="btn-div  w-46 -mt-26  ">
+                    <p>Approuvé par Jean Martin</p>
                 </div>
-
-
-                <div class="btn-div flex-col flex  text-center  -mt-8 ">
-                    <p>Lorem ipsum dolor sit.</p>
-                </div>
-
-
-
-                
-
 
             </div>
-        </div>
 
-
-
-        <div class="conge-info  flex-col w-full justify-between h-40 rounded-2xl bg-white mb-10 shadow-md">
-
-            <h2 class="p-4 pl-6">Congés d’été</h2>
-
-
-            <div class="  w-250   mx-auto  flex justify-between items-center ">
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Du 15 juillet 2025</p>
-                    Au 29 juillet 2025
-
-                </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Durée</p>
-                    <p>15 jours</p>
-
-                </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Type</p>
-                    <p>Congés payés</p>
-
-                </div>
-
-
-                <div class="btn-div flex-col flex  text-center space-y-1 ">
-                    <div class="bg-[#4B49AC] w-26 h-9 rounded-xl ">Modifier</div>
-                    <div class="bg-[#F8F9FA] w-26 h-9 rounded-xl ">Annuler</div>
-                </div>
-
-
-            </div>
 
         </div>
 
 
         <div class="conge-info  flex-col w-full justify-between h-40 rounded-2xl bg-white mb-10 shadow-md">
 
-            <h2 class="p-4 pl-6">Congés d’été</h2>
-
-            <div class="  w-250 flex justify-between pl-6  ">
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Du 15 juillet 2025</p>
-                    Au 29 juillet 2025
-
+            <div class="flex items-center  ">
+                <h2 class="p-4 pl-6 text-lg font-semibold text-gray-800">Congés d’été</h2>
+                <div
+                    class="bg-[#22C55E]/40 backdrop-blur-md text-black text-xs px-3 py-1 rounded-xl h-7 flex items-center justify-center gap-x-2">
+                    <i class="fa-solid fa-check"></i>
+                    Approuvé
                 </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Durée</p>
-                    <p>15 jours</p>
-
-                </div>
-
-                <div class=" flex-col items-center  justify-between mb-2 ">
-                    <p>Type</p>
-                    <p>Congés payés</p>
-
-                </div>
-
-
-                <div class="btn-div flex-col flex  text-center  -mt-8 ">
-                    <p>Lorem ipsum dolor sit.</p>
-                </div>
-
-
-
-                
-
 
             </div>
+
+
+            <div class="w-250 mx-auto flex justify-between items-center">
+
+                <div class="flex flex-col items-start text-center w-48">
+                    <p class="text-gray-700">Du 15 juillet 2025</p>
+                    <p class="text-gray-700">Au 29 juillet 2025</p>
+                </div>
+                <div class="flex flex-col items-start text-center w-24">
+                    <p class="text-gray-500">Durée</p>
+                    <p class="text-gray-500">15 jours</p>
+                </div>
+
+                <div class="flex flex-col items-start text-center w-32">
+                    <p class="text-gray-500">Type</p>
+                    <p class="text-gray-500">Congés payés</p>
+                </div>
+                <div class="btn-div  w-46 -mt-26  ">
+                    <p>Approuvé par Jean Martin</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="conge-info  flex-col w-full justify-between h-40 rounded-2xl bg-white mb-10 shadow-md">
+
+             <div class="flex items-center  ">
+                <h2 class="p-4 pl-6 text-lg font-semibold text-gray-800">Congés d’été</h2>
+                <div
+                    class="bg-[#FACC15]/40 backdrop-blur-md text-black text-xs px-3 py-1 rounded-xl h-7 flex items-center justify-center gap-x-2">
+                    <i class="fa-solid fa-clock"></i>
+                    En attente
+                </div>
+
+            </div>
+
+
+            <div class="w-250 mx-auto flex justify-between items-center">
+
+                <div class="flex flex-col items-start text-center w-48">
+                    <p class="text-gray-700">Du 15 juillet 2025</p>
+                    <p class="text-gray-700">Au 29 juillet 2025</p>
+                </div>
+                <div class="flex flex-col items-start text-center w-24">
+                    <p class="text-gray-500">Durée</p>
+                    <p class="text-gray-500">15 jours</p>
+                </div>
+
+                <div class="flex flex-col items-start text-center w-32">
+                    <p class="text-gray-500">Type</p>
+                    <p class="text-gray-500">Congés payés</p>
+                </div>
+                <div class="btn-div flex flex-col text-center space-y-2 w-46 items-end">
+                    <div
+                        class="w-28 h-9 rounded-xl flex items-center justify-center bg-[#4B49AC] text-white text-sm cursor-pointer shadow-sm gap-1">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Modifier
+                    </div>
+                    <div
+                        class="w-28 h-9 rounded-xl flex items-center justify-center bg-gray-100 text-gray-800 text-sm cursor-pointer border border-gray-300 gap-1">
+                        <i class="fa-solid fa-trash"></i>
+                        Annuler
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="conge-info  flex-col w-full justify-between h-50 rounded-2xl bg-white mb-10 shadow-md">
+
+            <div class="flex items-center  ">
+                <h2 class="p-4 pl-6 text-lg font-semibold text-gray-800">Congés d’été</h2>
+                <div
+                    class="bg-[#EF4444]/40 backdrop-blur-md text-black text-xs px-3 py-1 rounded-xl h-7 flex items-center justify-center gap-x-2">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    Refusé
+                </div>
+
+            </div>
+
+
+            <div class="w-250 mx-auto flex justify-between items-center mb-4">
+
+                <div class="flex flex-col items-start text-center w-48">
+                    <p class="text-gray-700">Du 15 juillet 2025</p>
+                    <p class="text-gray-700">Au 29 juillet 2025</p>
+                </div>
+                <div class="flex flex-col items-start text-center w-24">
+                    <p class="text-gray-500">Durée</p>
+                    <p class="text-gray-500">15 jours</p>
+                </div>
+
+                <div class="flex flex-col items-start text-center w-32">
+                    <p class="text-gray-500">Type</p>
+                    <p class="text-gray-500">Congés payés</p>
+                </div>
+                <div class="btn-div  w-46 -mt-26  ">
+                    <p>Refusé par Jean Martin</p>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col items-start text-center w-120 pl-6">
+                <p class="text-gray-500">Motif du refus:</p>
+                <p class="text-gray-500">Periode de forte activite, demande trop tardive</p>
+            </div>
+
+
+
+
         </div>
 
 
@@ -341,7 +329,7 @@
                 <p>01 23 45 67 89</p>
             </div>
 
-             <div >
+            <div>
                 <h2 class="mb-2 font-semibold">Adresse</h2>
                 <p>123 Rue de l’Entreprise</p>
                 <p>75001 Paris</p>
@@ -353,20 +341,20 @@
                 <p>Convention collective</p>
                 <p>Support IT</p>
             </div>
-             <div>
+            <div>
                 <h2 class="mb-2 font-semibold">Urgence</h2>
                 <p>En cas d’urgence:</p>
                 <p>urgence@enterprise.com</p>
                 <p>06 12 34 56 78</p>
             </div>
 
-            
 
-            
+
+
         </div>
         <div class="w-[1050px] h-[1px] bg-gray-300 flex mx-auto mb-2"></div>
 
-        <div class="flex mx-auto w-80">  &copy; 2025 Entreprise. Tous droits réservés.</div>
+        <div class="flex mx-auto w-80"> &copy; 2025 Entreprise. Tous droits réservés.</div>
 
     </div>
 

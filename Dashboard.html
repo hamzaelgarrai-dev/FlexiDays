@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>FlexiDays</title>
+</head>
+
+<body class="bg-[#FAFAFA]">
+
+
+    <div class="header bg-white  top-0 left-0 w-full z-50  shadow-md ">
+        <div class="nav h-22 max-w-[1050px] flex justify-between items-center mx-auto  ">
+            <div class="logo text-2xl font-bold text-[#504B8E]">FlexiDays</div>
+            <div class="links ">
+                <ul class="flex justify-between items-center w-120 text-[14.5px] text-[#6C7383]">
+                    <li><a href="/Dashboard.html">Dashboard</a></li>
+                    <li><a href="/mes-conges.html">Mes Conge</a></li>
+                    <li> <a href="/Demande-conge.html">Demande de conge</a></li>
+                    <li><a href="/Administration.html">Administration</a></li>
+
+                </ul>
+            </div>
+            <div class="profile ">
+                <ul class="flex space-x-4">
+
+                    <li><i class="fa-solid fa-bell text-3xl text-gray-700"></i></li>
+                    <li><i class="fa-solid fa-user text-3xl text-gray-700"></i></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="main  max-w-[1050px] w-full h-260 flex-col mx-auto">
+
+        <div class="heading flex-col items-start mt-12 mb-10   ">
+
+            <h1 class="font-semibold text-2xl text-[#111827]">Tableau de Board</h1>
+            <p class="text-[#4B5563]">Bienvenue, gerez vos conges et suivez vos demandes</p>
+
+        </div>
+
+        <div
+            class="notification relative  flex flex-col w-full  h-52 space-y-2 rounded-2xl bg-white mb-10 shadow-md animate__animated animate__fadeInLeftBig">
+            <div class="flex justify-between w-full">
+
+                <h2 class="p-4 pl-6">Notification Importantes</h2>
+                <div class="btn-div flex flex-row pr-6 -space-x-3">
+                    <div class="leftbtn p-2 mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-left text-2xl  text-gray-700"></i></div>
+                    <div class="rightbtn p-2 mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-right text-2xl text-gray-700"></i></div>
+                </div>
+
+            </div>
+
+            <div
+                class="rounded-3xl bg-[#E0F2FE] border border-[#60A5FA]  w-250 h-30 flex items-start justify-start mx-auto  p-7">
+                <div class="pr-2 pt-1"><i class="fa-solid fa-circle-exclamation"></i></div>
+                <div class="flex flex-col  text-[#4B5563] ">
+                    <p class="">Fermeture exceptionnelle</p>
+                    <p class="">Les bureaux seront fermés le 15 mars 2025 pour maintenance. Planifiez vos congés en conséquence.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-cards flex items-center justify-between  w-full h-60  mb-10 animate__animated animate__fadeInDown  ">
+
+            <div class="card w-80 h-50 rounded-2xl bg-white shadow-md">
+                <div class="flex justify-between items-center px-6 pt-5 pb-3 pr-6 border-b border-gray-200">
+                    <h2 class=" text-lg font-semibold text-gray-800 ">Solde de Conge</h2>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                
+
+                <div class="details flex justify-between px-6 py-4 text-gray-600">
+                    <div class="flex flex-col gap-2">
+                        <p>Conges Payes</p>
+                        <p>RTT</p>
+                        <p>Conges maladie</p>
+                    </div>
+                    <div class="flex flex-col gap-2 font-medium text-gray-900">
+                        <p>25 Jours</p>
+                        <p>8 Jours</p>
+                        <p>5 Jours</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="card w-80 h-50 rounded-2xl bg-white shadow-md">
+                <div class="flex justify-between items-center px-6 pt-5 pb-3 pr-6 border-b border-gray-200">
+                    <h2 class=" text-lg font-semibold text-gray-800 ">Demandes en cours</h2>
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <div class="details flex justify-between px-6 py-4 text-gray-600">
+                    <div class="flex flex-col gap-2">
+                        <p>En attente</p>
+                        <p>Approuvées</p>
+                        <p>Refusées</p>
+                    </div>
+                    <div class="flex flex-col gap-2 font-medium text-gray-900">
+                        <p>2</p>
+                        <p>5</p>
+                        <p>0</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="card w-80 h-50 rounded-2xl bg-white bg shadow-md">
+                <div class="flex justify-between items-center px-6 pt-5 pb-3 pr-6 border-b border-gray-200">
+                    <h2 class=" text-lg font-semibold text-gray-800 ">Prochains conges</h2>
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+
+                <div class="details flex justify-between px-6 py-4 text-gray-600">
+                    <div class="flex flex-col gap-2">
+
+                        <div class="flex items-center">
+                            <div class="bg-gray-400 w-2.5 h-10 rounded-full mr-2"></div>
+                            <div class="flex flex-col">
+                                <p cl>Congés d’été</p>
+                            <p class="text-gray-900">15 - 30 juillet 2025</p>
+
+                            </div>
+                            
+
+                        </div>
+                         <div class="flex items-center">
+                            <div class="bg-gray-400 w-2.5 h-10 rounded-full mr-2"></div>
+                            <div class="flex flex-col">
+                                <p cl>Pont de mai</p>
+                            <p class="text-gray-900">1 - 2 mai 2025</p>
+
+                            </div>
+                            
+
+                        </div>
+
+                       
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="action w-full bg-white rounded-2xl shadow-lg p-6 mb-18">
+
+    <h2 class="text-xl font-semibold text-gray-800 mb-6">Actions rapides</h2>
+
+    <div class="btn-container flex flex-wrap justify-between gap-2">
+
+        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm   hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
+            <i class="fa-solid fa-plus text-2xl "></i>
+            <p class="pt-2  font-medium">Nouvelle Demande</p>
+        </div>
+
+        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white  flex flex-col items-center justify-center cursor-pointer">
+            <i class="fa-solid fa-calendar-days text-2xl "></i>
+            <p class="pt-2  font-medium">Mes congés</p>
+        </div>
+
+        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
+            <i class="fa-solid fa-chart-simple text-2xl "></i>
+            <p class="pt-2  font-medium">Statistiques</p>
+        </div>
+
+        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
+            <i class="fa-solid fa-gear text-2xl "></i>
+            <p class="pt-2  font-medium">Paramètres</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
