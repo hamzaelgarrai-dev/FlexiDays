@@ -1,0 +1,230 @@
+{
+    "users": [
+    {
+      "id": 1,
+      "firstName": "Hamza",
+      "lastName": "Elgarrai",
+      "email": "hamza.elgarrai@flexidays.test",
+      "role": "employee"
+      
+    },
+    {
+      "id": 2,
+      "firstName": "Ahmed",
+      "lastName": "Nouri",
+      "email": "ahmed.nouri@flexidays.test",
+      "role": "employee"
+      
+    },
+    {
+      "id": 3,
+      "firstName": "Leila",
+      "lastName": "Benali",
+      "email": "leila.benali@flexidays.test",
+      "role": "employee"
+      
+    },
+    {
+      "id": 4,
+      "firstName": "Youssef",
+      "lastName": "Rami",
+      "email": "youssef.rami@flexidays.test",
+      "role": "manager"
+      
+    },
+    {
+      "id": 5,
+      "firstName": "Sofia",
+      "lastName": "Amrani",
+      "email": "sofia.amrani@flexidays.test",
+      "role": "hr"
+      
+    }
+  ],
+
+  "notifications": [
+    {
+      "id": 1,
+      "type": "info",
+      "title": "Fermeture exceptionnelle",
+      "message": "Les bureaux seront fermés le 15 mars 2025 pour maintenance. Planifiez vos congés en conséquence.",
+      "startDate": "2025-03-01",
+      "endDate": "2025-03-16",
+      "createdAt": "2025-02-25T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "type": "event",
+      "title": "Journée team-building",
+      "message": "Team-building le 22 août 2025 — présence importante pour le département produit.",
+      "startDate": "2025-08-22",
+      "endDate": "2025-08-22",
+      "createdAt": "2025-07-10T09:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "type": "reminder",
+      "title": "Soumission des congés Q4",
+      "message": "Pensez à soumettre vos demandes de congés pour le dernier trimestre avant le 30 septembre.",
+      "startDate": "2025-09-01",
+      "endDate": "2025-09-30",
+      "createdAt": "2025-08-25T09:30:00.000Z"
+    },
+    {
+      "id": 4,
+      "type": "info",
+      "title": "Nouvelle politique de congés",
+      "message": "À partir du 1er octobre, les congés sans solde devront être validés par le service RH avant soumission.",
+      "startDate": "2025-10-01",
+      "endDate": "2025-12-31",
+      "createdAt": "2025-09-05T10:00:00.000Z"
+    }
+  ],
+
+  "leaveBalances": [
+    {
+      "id": 1,
+      "userId": 1,
+      "paidLeave": 25,
+      "rtt": 8,
+      "sick": 10,
+      "consumed": {
+        "paidLeave": 5,
+        "rtt": 0,
+        "sick": 2
+      },
+      "updatedAt": "2025-07-01T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "paidLeave": 20,
+      "rtt": 6,
+      "sick": 8,
+      "consumed": {
+        "paidLeave": 10,
+        "rtt": 1,
+        "sick": 0
+      },
+      "updatedAt": "2025-06-15T09:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "paidLeave": 18,
+      "rtt": 5,
+      "sick": 12,
+      "consumed": {
+        "paidLeave": 3,
+        "rtt": 0,
+        "sick": 1
+      },
+      "updatedAt": "2025-07-03T09:00:00.000Z"
+    }
+  ],
+
+   "requests": [
+    {
+      "id": 101,
+      "userId": 1,
+      "type": "Congés Payés",
+      "startDate": "2025-07-15",
+      "endDate": "2025-07-30",
+      "days": 12,
+      "status": "approved",
+      "createdAt": "2025-06-20T10:30:00.000Z",
+      "updatedAt": "2025-06-25T14:00:00.000Z",
+      "approverId": 4,
+      "approverComment": "Bonne journée, profitez bien !",
+      "justification": "Vacances d'été"
+    },
+    {
+      "id": 102,
+      "userId": 1,
+      "type": "RTT",
+      "startDate": "2025-05-01",
+      "endDate": "2025-05-02",
+      "days": 2,
+      "status": "approved",
+      "createdAt": "2025-04-10T11:20:00.000Z",
+      "updatedAt": "2025-04-12T09:00:00.000Z",
+      "approverId": 4,
+      "approverComment": null,
+      "justification": "Pont du 1er mai"
+    },
+    {
+      "id": 103,
+      "userId": 2,
+      "type": "Congés Payés",
+      "startDate": "2025-08-03",
+      "endDate": "2025-08-10",
+      "days": 6,
+      "status": "pending",
+      "createdAt": "2025-07-20T08:00:00.000Z",
+      "updatedAt": "2025-07-20T08:00:00.000Z",
+      "approverId": 4,
+      "approverComment": null,
+      "justification": "Vacances familiales"
+    },
+    {
+      "id": 104,
+      "userId": 3,
+      "type": "Congés maladie",
+      "startDate": "2025-06-05",
+      "endDate": "2025-06-07",
+      "days": 3,
+      "status": "rejected",
+      "createdAt": "2025-06-04T07:30:00.000Z",
+      "updatedAt": "2025-06-04T15:00:00.000Z",
+      "approverId": 4,
+      "approverComment": "Merci d'ajouter un certificat médical.",
+      "justification": "Fièvre"
+    },
+    {
+      "id": 105,
+      "userId": 2,
+      "type": "Congés Payés",
+      "startDate": "2025-09-01",
+      "endDate": "2025-09-03",
+      "days": 3,
+      "status": "pending",
+      "createdAt": "2025-08-01T12:00:00.000Z",
+      "updatedAt": "2025-08-01T12:00:00.000Z",
+      "approverId": 4,
+      "approverComment": null,
+      "justification": "Court séjour"
+    }
+  ],
+  "settings": {
+    "companyName": "FlexiDays",
+    "hrContact": {
+      "name": "Service RH",
+      "email": "rh@flexidays.test",
+      "phone": "+212 5 00 00 00 00",
+      "address": "123 Avenue des Entreprises, Casablanca, Morocco"
+    },
+    "leaveTypes": [
+      "Congés Payés",
+      "RTT",
+      "Congés maladie",
+      "Sans solde"
+    ],
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "timezone": "Africa/Casablanca"
+  },
+
+  "statistics": {
+    "totalEmployees": 5,
+    "requestsSummary": {
+      "pending": 2,
+      "approved": 2,
+      "rejected": 1
+    },
+    "lastUpdated": "2025-08-01T12:00:00.000Z"
+  }
+}
+
+
+  
+
+  

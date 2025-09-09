@@ -13,6 +13,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>FlexiDays</title>
 </head>
 
@@ -62,14 +63,20 @@
             <div class="flex justify-between w-full">
 
                 <h2 class="p-4 pl-6">Notification Importantes</h2>
-                <div class="btn-div flex flex-row pr-6 -space-x-3">
-                    <div class="leftbtn p-2 mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-left text-2xl  text-gray-700"></i></div>
-                    <div class="rightbtn p-2 mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-right text-2xl text-gray-700"></i></div>
+                <div class="btn-div flex flex-row pr-6 ">
+                    <div class="p-2">
+                        <button class="leftbtn   mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-left text-2xl  text-gray-700"></i></button>
+                    </div>
+                    <div class="p-2">
+                        <button onclick="btnNotification()" class="rightbtn  mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-right text-2xl text-gray-700"></i></button>
+                    </div>
+                    
+                    
                 </div>
 
             </div>
 
-            <div
+            <div id="Notification-container"
                 class="rounded-3xl bg-[#E0F2FE] border border-[#60A5FA]  w-250 h-30 flex items-start justify-start mx-auto  p-7">
                 <div class="pr-2 pt-1"><i class="fa-solid fa-circle-exclamation"></i></div>
                 <div class="flex flex-col  text-[#4B5563] ">
@@ -212,7 +219,7 @@
 
 
 
-
+<script src="main.js"></script>
 
 </body>
 
