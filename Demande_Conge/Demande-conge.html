@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="/style.css">
+
     <title>Demande conge</title>
 </head>
 
@@ -20,10 +24,10 @@
             <div class="logo text-2xl font-bold text-[#504B8E]">FlexiDays</div>
             <div class="links ">
                 <ul class="flex justify-between items-center w-120 text-[14.5px] text-[#6C7383]">
-                    <li> <a href="/Dashboard.html">Dashboard</a></li>
-                    <li><a href="/mes-conges.html">Mes Conge</a></li>
-                    <li> <a href="/Dashboard.html">Demande de conge</a></li>
-                    <li><a href="/Administration.html">Administration</a></li>
+                    <li> <a href="/Dashboard/Dashboard.html">Dashboard</a></li>
+                    <li><a href="/Mes_Conges/mes-conges.html">Mes Conge</a></li>
+                    <li> <a href="/Demande_Conge/Demande-conge.html">Demande de conge</a></li>
+                    <li><a href="/Administration/Administration.html">Administration</a></li>
 
                 </ul>
             </div>
@@ -52,7 +56,7 @@
         <div class="flex flex-col mx-auto justify-between w-[750px]  h-195 rounded-2xl bg-white p-6 mb-10 shadow-md">
 
 
-            <form action="" class="max-w-[750px] mx-auto">
+            <form id="form" action="" class="max-w-[750px] mx-auto">
 
                 <div class="flex justify-between items-center w-full h-30   ">
 
@@ -82,8 +86,9 @@
                         <select id="Type-congé"
                             class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                             <option value="">Sélectionnez un type de congé</option>
-                            <option value="payes">Congés payés</option>
-                            <option value="sans-solde">Congé sans solde</option>
+                            <option value="Congés Payés">Congés payés</option>
+                            <option value="RTT">RTT</option>
+                            <option value="Congés maladie">Congés maladie</option>
                         </select>
                     </div>
 
@@ -131,10 +136,14 @@
 
                 <div class="flex justify-around items-center w-full h-30  ">
 
-                    <div class="flex items-center justify-center bg-[#5B57D9] w-65 h-16 rounded-xl text-white gap-x-3 cursor-pointer"><i class="fa-solid fa-paper-plane"></i>
-                        Soumettre la demande</div>
-                    <div class="flex items-center justify-center  w-65 h-16 rounded-xl border border-black gap-x-3 cursor-pointer"><i class="fa-solid fa-rotate-left"></i>
-                        Réinitialiser</div>
+                    <button type="submit"
+                        class="flex items-center justify-center bg-[#5B57D9] w-65 h-16 rounded-xl text-white gap-x-3 cursor-pointer"><i
+                            class="fa-solid fa-paper-plane"></i>
+                        Soumettre la demande</button>
+                    <button type="reset"
+                        class="flex items-center justify-center  w-65 h-16 rounded-xl border border-black gap-x-3 cursor-pointer"><i
+                            class="fa-solid fa-rotate-left"></i>
+                        Réinitialiser</button>
 
 
 
@@ -153,7 +162,7 @@
         <div class="flex-col w-full justify-between h-80  rounded-2xl bg-white mb-10 shadow-md">
             <h2 class=" pt-8 pl-6 text-[#111827] text-[17px] font-medium ">Mes dernières demandes</h2>
 
-            <div class=" w-[700px] h-25 flex items-center justify-between mx-auto ">
+            <div id="lastleave1" class=" w-[700px] h-25 flex items-center justify-between mx-auto ">
                 <div class="flex items-center justify-center">
                     <div class="bg-black w-2.5 h-2.5 rounded-full mr-2"></div>
                     <div class="flex-col">
@@ -163,15 +172,14 @@
 
                 </div>
                 <div class="bg-[#FACC15]/40 backdrop-blur-md w-26 h-9 rounded-xl 
-            flex items-center justify-center 
-            border border-white/20 shadow-md text-black">
+               flex items-center justify-center border border-white/20 shadow-md text-black">
                     En attente
                 </div>
             </div>
 
-            <div class="w-[700px] h-[0.5px] bg-[#4B5563]  mx-auto "></div>
+            <div  class="w-[700px] h-[0.5px] bg-[#4B5563]  mx-auto "></div>
 
-            <div class=" w-[700px] h-25 flex items-center justify-between mx-auto ">
+            <div id="lastleave2" class=" w-[700px] h-25 flex items-center justify-between mx-auto ">
                 <div class="flex items-center justify-center">
                     <div class="bg-black w-2.5 h-2.5 rounded-full mr-2"></div>
                     <div class="flex-col">
@@ -181,10 +189,9 @@
 
                 </div>
                 <div class="bg-[#22C55E]/40 backdrop-blur-md w-26 h-9 rounded-xl 
-            flex items-center justify-center 
-            border border-white/20 shadow-md text-black">
-    Approuvé
-</div>
+                flex items-center justify-center  border border-white/20 shadow-md text-black">
+                    Approuvé
+                </div>
             </div>
 
             <div class="w-[700px] h-[0.5px] bg-[#4B5563]  mx-auto "></div>
@@ -238,6 +245,9 @@
 
     </div>
 
+
+    <script src="/main.js"></script>
+    <script src="Demande_conge.js"></script>
 
 
 </body>

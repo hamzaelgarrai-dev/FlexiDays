@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="/style.css">
     <title>FlexiDays</title>
 </head>
 
@@ -25,10 +26,10 @@
             <div class="logo text-2xl font-bold text-[#504B8E]">FlexiDays</div>
             <div class="links ">
                 <ul class="flex justify-between items-center w-120 text-[14.5px] text-[#6C7383]">
-                    <li><a href="/Dashboard.html">Dashboard</a></li>
-                    <li><a href="/mes-conges.html">Mes Conge</a></li>
-                    <li> <a href="/Demande-conge.html">Demande de conge</a></li>
-                    <li><a href="/Administration.html">Administration</a></li>
+                    <li> <a href="/Dashboard/Dashboard.html">Dashboard</a></li>
+                    <li><a href="/Mes_Conges/mes-conges.html">Mes Conge</a></li>
+                    <li> <a href="/Demande_Conge/Demande-conge.html">Demande de conge</a></li>
+                    <li><a href="/Administration/Administration.html">Administration</a></li>
 
                 </ul>
             </div>
@@ -103,7 +104,7 @@
                         <p>RTT</p>
                         <p>Conges maladie</p>
                     </div>
-                    <div id="soldeContainer" class="flex flex-col gap-2 font-medium text-gray-900">
+                    <div id="soldeContainer" class="flex items-end flex-col gap-2 font-medium text-gray-900">
                         <p>25 Jours</p>
                         <p>8 Jours</p>
                         <p>5 Jours</p>
@@ -219,7 +220,8 @@
 
 
 
-<script src="main.js"></script>
+<script src="/main.js"></script>
+<script src="Dashboard.js"></script>
 
 </body>
 

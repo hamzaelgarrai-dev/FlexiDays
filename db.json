@@ -1,50 +1,44 @@
 {
-    "users": [
+  "users": [
     {
-      "id": 1,
+      "id": "1",
       "firstName": "Hamza",
       "lastName": "Elgarrai",
       "email": "hamza.elgarrai@flexidays.test",
       "role": "employee"
-      
     },
     {
-      "id": 2,
+      "id": "2",
       "firstName": "Ahmed",
       "lastName": "Nouri",
       "email": "ahmed.nouri@flexidays.test",
       "role": "employee"
-      
     },
     {
-      "id": 3,
+      "id": "3",
       "firstName": "Leila",
       "lastName": "Benali",
       "email": "leila.benali@flexidays.test",
       "role": "employee"
-      
     },
     {
-      "id": 4,
+      "id": "4",
       "firstName": "Youssef",
       "lastName": "Rami",
       "email": "youssef.rami@flexidays.test",
       "role": "manager"
-      
     },
     {
-      "id": 5,
+      "id": "5",
       "firstName": "Sofia",
       "lastName": "Amrani",
       "email": "sofia.amrani@flexidays.test",
       "role": "hr"
-      
     }
   ],
-
   "notifications": [
     {
-      "id": 1,
+      "id": "1",
       "type": "info",
       "title": "Fermeture exceptionnelle",
       "message": "Les bureaux seront fermés le 15 mars 2025 pour maintenance. Planifiez vos congés en conséquence.",
@@ -53,7 +47,7 @@
       "createdAt": "2025-02-25T09:00:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "type": "event",
       "title": "Journée team-building",
       "message": "Team-building le 22 août 2025 — présence importante pour le département produit.",
@@ -62,7 +56,7 @@
       "createdAt": "2025-07-10T09:00:00.000Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "type": "reminder",
       "title": "Soumission des congés Q4",
       "message": "Pensez à soumettre vos demandes de congés pour le dernier trimestre avant le 30 septembre.",
@@ -71,7 +65,7 @@
       "createdAt": "2025-08-25T09:30:00.000Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "type": "info",
       "title": "Nouvelle politique de congés",
       "message": "À partir du 1er octobre, les congés sans solde devront être validés par le service RH avant soumission.",
@@ -80,10 +74,9 @@
       "createdAt": "2025-09-05T10:00:00.000Z"
     }
   ],
-
   "leaveBalances": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "paidLeave": 25,
       "rtt": 8,
@@ -96,7 +89,7 @@
       "updatedAt": "2025-07-01T09:00:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 2,
       "paidLeave": 20,
       "rtt": 6,
@@ -109,7 +102,7 @@
       "updatedAt": "2025-06-15T09:00:00.000Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 3,
       "paidLeave": 18,
       "rtt": 5,
@@ -122,10 +115,9 @@
       "updatedAt": "2025-07-03T09:00:00.000Z"
     }
   ],
-
-   "requests": [
+  "requests": [
     {
-      "id": 101,
+      "id": "101",
       "userId": 1,
       "type": "Congés Payés",
       "startDate": "2025-07-15",
@@ -139,7 +131,7 @@
       "justification": "Vacances d'été"
     },
     {
-      "id": 102,
+      "id": "102",
       "userId": 1,
       "type": "RTT",
       "startDate": "2025-05-01",
@@ -153,7 +145,7 @@
       "justification": "Pont du 1er mai"
     },
     {
-      "id": 103,
+      "id": "103",
       "userId": 2,
       "type": "Congés Payés",
       "startDate": "2025-08-03",
@@ -167,7 +159,7 @@
       "justification": "Vacances familiales"
     },
     {
-      "id": 104,
+      "id": "104",
       "userId": 3,
       "type": "Congés maladie",
       "startDate": "2025-06-05",
@@ -181,7 +173,7 @@
       "justification": "Fièvre"
     },
     {
-      "id": 105,
+      "id": "105",
       "userId": 2,
       "type": "Congés Payés",
       "startDate": "2025-09-01",
@@ -193,6 +185,62 @@
       "approverId": 4,
       "approverComment": null,
       "justification": "Court séjour"
+    },
+    {
+      "id": "22c2",
+      "userId": 1,
+      "type": "payes",
+      "startDate": "2025-09-12",
+      "endDate": "2025-09-14",
+      "days": 3,
+      "status": "pending",
+      "createdAt": "2025-09-10T15:28:56.488Z",
+      "updatedAt": "2025-09-10T15:28:56.488Z",
+      "approverId": null,
+      "approverComment": null,
+      "justification": "conge pour voyage"
+    },
+    {
+      "id": "63e3",
+      "userId": 1,
+      "type": "RTT",
+      "startDate": "2025-09-23",
+      "endDate": "2025-09-26",
+      "days": 4,
+      "status": "pending",
+      "createdAt": "2025-09-10T18:25:58.422Z",
+      "updatedAt": "2025-09-10T18:25:58.423Z",
+      "approverId": null,
+      "approverComment": null,
+      "justification": "RTT conge"
+    },
+    {
+      "id": "a026",
+      "userId": 1,
+      "type": "Congés Payés",
+      "startDate": "2025-09-28",
+      "endDate": "2025-09-30",
+      "days": 3,
+      "status": "pending",
+      "createdAt": "2025-09-10T18:27:43.294Z",
+      "updatedAt": "2025-09-10T18:27:43.294Z",
+      "approverId": null,
+      "approverComment": null,
+      "justification": "conge payes"
+    },
+    {
+      "id": "67c7",
+      "userId": 1,
+      "type": "RTT",
+      "startDate": "2025-09-23",
+      "endDate": "2025-09-25",
+      "days": 3,
+      "status": "pending",
+      "createdAt": "2025-09-10T18:28:16.734Z",
+      "updatedAt": "2025-09-10T18:28:16.734Z",
+      "approverId": null,
+      "approverComment": null,
+      "justification": "test"
     }
   ],
   "settings": {
@@ -209,10 +257,15 @@
       "Congés maladie",
       "Sans solde"
     ],
-    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "workingDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
     "timezone": "Africa/Casablanca"
   },
-
   "statistics": {
     "totalEmployees": 5,
     "requestsSummary": {
@@ -223,8 +276,3 @@
     "lastUpdated": "2025-08-01T12:00:00.000Z"
   }
 }
-
-
-  
-
-  
