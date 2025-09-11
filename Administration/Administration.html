@@ -9,10 +9,11 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Administration</title>
 </head>
 
-<body class="bg-[#FAFAFA]">
+<body class="bg-[var(--backgroung-color)]">
 
 
     <div class="header bg-white  top-0 left-0 w-full z-50  shadow-md ">
@@ -45,8 +46,8 @@
         <div class="heading flex  items-center justify-between mt-12 mb-10   ">
 
             <div class="flex-col ">
-                <h1 class="font-semibold text-2xl text-[#111827]">Gestion des congés</h1>
-                <p class="text-[#4B5563]">Gérez toutes les demandes de congés des employés</p>
+                <h1 class="font-semibold text-2xl text-[var(--heading-color)]">Gestion des congés</h1>
+                <p class="text-[var(--subHeading-color)]">Gérez toutes les demandes de congés des employés</p>
             </div>
 
             <div class="flex space-x-3">
@@ -73,8 +74,8 @@
                     <i class="fa-solid fa-calendar-days"></i>
                 </div>
                 <div class="pl-4">
-                    <p class="text-[#4B5563] text-sm">En attente</p>
-                    <p class="text-[#111827] text-xl font-semibold">12</p>
+                    <p class="text-[var(--subHeading-color)] text-sm">En attente</p>
+                    <p class="text-[var(--heading-color)] text-xl font-semibold">12</p>
                 </div>
             </div>
             <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
@@ -82,8 +83,8 @@
                     <i class="fa-solid fa-check"></i>
                 </div>
                 <div class="pl-4">
-                    <p class="text-[#4B5563] text-sm">Approuvées</p>
-                    <p class="text-[#111827] text-xl font-semibold">45</p>
+                    <p class="text-[var(--subHeading-color)] text-sm">Approuvées</p>
+                    <p class="text-[var(--heading-color)] text-xl font-semibold">45</p>
                 </div>
             </div>
             <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
@@ -91,8 +92,8 @@
                     <i class="fa-solid fa-clock"></i>
                 </div>
                 <div class="pl-4">
-                    <p class="text-[#4B5563] text-sm">Refusées</p>
-                    <p class="text-[#111827] text-xl font-semibold">3</p>
+                    <p class="text-[var(--subHeading-color)] text-sm">Refusées</p>
+                    <p class="text-[var(--heading-color)] text-xl font-semibold">3</p>
                 </div>
             </div>
             <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
@@ -100,8 +101,8 @@
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <div class="pl-4">
-                    <p class="text-[#4B5563] text-sm">Total ce mois</p>
-                    <p class="text-[#111827] text-xl font-semibold">60</p>
+                    <p class="text-[var(--subHeading-color)] text-sm">Total ce mois</p>
+                    <p class="text-[var(--heading-color)] text-xl font-semibold">60</p>
                 </div>
             </div>
         </div>
@@ -117,13 +118,13 @@
                 <h2 class="p-4 pl-6 text-[17px] font-medium">Demandes de congés</h2>
                 <div class="btn-div flex flex-row pr-6 justify-between w-100">
                     <select id="Status" onclick="selectedoption()"
-                        class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-38 h-10 p-2 mt-2 ">
+                        class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-38 h-10 p-2 mt-2 ">
                         <option value="Tous les statuts">Tous les statuts</option>
                         <option value="En attente">En attente</option>
                         <option value="Approuve">Approuve</option>
                     </select>
                     <input type="text" id="Date-fin"
-                        class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-54 h-10 p-2 mt-2 "
+                        class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-54 h-10 p-2 mt-2 "
                         placeholder="Rechercher un employé..." required />
 
                 </div>
@@ -175,7 +176,7 @@
                     </div>
 
                     <div class="flex justify-between gap-3 pt-4">
-                        <div class="flex items-center justify-center gap-1 w-30 h-10 rounded-xl bg-[#504B8E] text-white font-medium shadow-sm 
+                        <div class="flex items-center justify-center gap-1 w-30 h-10 rounded-xl bg-[var(--btnApprove-color)] text-white font-medium shadow-sm 
            hover:bg-[#3f3a76] transition-all duration-200 cursor-pointer">
                             <i class="fa-solid fa-check"></i>
                             Approuver
@@ -226,7 +227,7 @@
                     </div>
 
                     <div class="flex justify-between gap-3 pt-4">
-                        <div class="flex items-center justify-center gap-1 w-30 h-10 rounded-xl bg-[#504B8E] text-white font-medium shadow-sm 
+                        <div class="flex items-center justify-center gap-1 w-30 h-10 rounded-xl bg-[var(--btnApprove-color)] text-white font-medium shadow-sm 
            hover:bg-[#3f3a76] transition-all duration-200 cursor-pointer">
                             <i class="fa-solid fa-check"></i>
                             Approuver
@@ -324,7 +325,7 @@
                     </div>
 
                     <div class="flex justify-between gap-3 pt-4">
-                        <div class="flex items-center justify-center gap-1 w-30 h-10 rounded-xl bg-[#504B8E] text-white font-medium shadow-sm 
+                        <div class="flex items-center justify-center gap-1 w-30 h-10 rounded-xl bg-[var(--btnApprove-color)] text-white font-medium shadow-sm 
            hover:bg-[#3f3a76] transition-all duration-200 cursor-pointer">
                             <i class="fa-solid fa-check"></i>
                             Approuver
@@ -347,7 +348,7 @@
 
 
             <div class="flex justify-between ">
-                <h2 class="p-2 pl-6 text-[#4B5563] ">Affichage de 1 à 4 sur 60 demandes</h2>
+                <h2 class="p-2 pl-6 text-[var(--subHeading-color)] ">Affichage de 1 à 4 sur 60 demandes</h2>
                 <div class="btn-div flex flex-row justify-between w-90 pr-6">
                     <div
                         class=" p-2 mt-2 bg-gray-200 text-gray-700 w-26 h-8 rounded-2xl flex items-center justify-center cursor-pointer ">

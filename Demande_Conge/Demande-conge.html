@@ -16,7 +16,7 @@
     <title>Demande conge</title>
 </head>
 
-<body class="bg-[#FAFAFA]">
+<body class="bg-[var(--backgroung-color)]">
 
 
     <div class="header bg-white  top-0 left-0 w-full z-50  shadow-md ">
@@ -48,8 +48,8 @@
     <div class="main  max-w-[750px] w-full h-340 flex-col mx-auto">
         <div class="heading flex-col items-start mt-12 mb-10   ">
 
-            <h1 class="font-semibold text-2xl text-[#111827]">Nouvelle demande de congé</h1>
-            <p class="text-[#4B5563]">Remplissez le formulaire ci-dessous pour soumettre votre demande de congé.</p>
+            <h1 class="font-semibold text-2xl text-[var(--heading-color)]">Nouvelle demande de congé</h1>
+            <p class="text-[var(--subHeading-color)]">Remplissez le formulaire ci-dessous pour soumettre votre demande de congé.</p>
 
         </div>
 
@@ -62,16 +62,16 @@
 
                     <div class="w-65">
                         <label for="Date-début"
-                            class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">Date de début</label>
+                            class="block mb-2 text-sm font-medium text-[var(--heading-color)] dark:text-white">Date de début</label>
                         <input type="date" id="Date-début"
-                            class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                             placeholder="jj/mm/aaaa" required />
                     </div>
                     <div class="w-65">
-                        <label for="Date-fin" class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">Date
+                        <label for="Date-fin" class="block mb-2 text-sm font-medium text-[var(--heading-color)] dark:text-white">Date
                             de fin</label>
                         <input type="date" id="Date-fin"
-                            class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                             placeholder="jj/mm/aaaa" required />
                     </div>
 
@@ -82,9 +82,9 @@
 
                     <div class="w-full">
                         <label for="Type-congé"
-                            class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">Type de congé</label>
+                            class="block mb-2 text-sm font-medium text-[var(--heading-color)] dark:text-white">Type de congé</label>
                         <select id="Type-congé"
-                            class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                            class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                             <option value="">Sélectionnez un type de congé</option>
                             <option value="Congés Payés">Congés payés</option>
                             <option value="RTT">RTT</option>
@@ -98,14 +98,14 @@
 
                     <div class="w-full">
                         <label for="Justification"
-                            class="block mb-2 text-sm font-medium text-[#111827] dark:text-white">
+                            class="block mb-2 text-sm font-medium text-[var(--heading-color)] dark:text-white">
                             Justification
                         </label>
                         <textarea id="Justification" rows="5" maxlength="500"
-                            placeholder="Décrivez la raison de votre demande de congé..." class="bg-gray-50 border border-gray-300 text-[#111827] text-sm rounded-lg 
+                            placeholder="Décrivez la raison de votre demande de congé..." class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg 
            focus:ring-blue-500 focus:border-blue-500 block w-full p-3 resize-none" required></textarea>
                         <label for="Justification"
-                            class="block mt-2 text-sm font-medium text-[#111827] dark:text-white">
+                            class="block mt-2 text-sm font-medium text-[var(--heading-color)] dark:text-white">
                             Maximum 500 caractères
                         </label>
                     </div>
@@ -120,7 +120,7 @@
                         <div
                             class="rounded-3xl bg-[#E0F2FE] border border-[#60A5FA]  w-140 h-30 flex items-start justify-start p-4">
                             <div class="pr-2 pt-1"><i class="fa-solid fa-circle-exclamation"></i></div>
-                            <div class="flex flex-col text-[#4B5563] ">
+                            <div class="flex flex-col text-[var(--subHeading-color)] ">
                                 <p class="">Information importante :</p>
                                 <p class="">Votre demande sera transmise à votre manager pour validation. Vous recevrez
                                     une
@@ -160,14 +160,14 @@
         </div>
 
         <div class="flex-col w-full justify-between h-80  rounded-2xl bg-white mb-10 shadow-md">
-            <h2 class=" pt-8 pl-6 text-[#111827] text-[17px] font-medium ">Mes dernières demandes</h2>
+            <h2 class=" pt-8 pl-6 text-[var(--heading-color)] text-[17px] font-medium ">Mes dernières demandes</h2>
 
             <div id="lastleave1" class=" w-[700px] h-25 flex items-center justify-between mx-auto ">
                 <div class="flex items-center justify-center">
                     <div class="bg-black w-2.5 h-2.5 rounded-full mr-2"></div>
                     <div class="flex-col">
-                        <p class="text-[#111827]">Congés payés </p>
-                        <p class="text-[#4B5563]">15/03/2025 → 19/03/2025 </p>
+                        <p class="text-[var(--heading-color)]">Congés payés </p>
+                        <p class="text-[var(--subHeading-color)]">15/03/2025 → 19/03/2025 </p>
                     </div>
 
                 </div>
@@ -183,8 +183,8 @@
                 <div class="flex items-center justify-center">
                     <div class="bg-black w-2.5 h-2.5 rounded-full mr-2"></div>
                     <div class="flex-col">
-                        <p class="text-[#111827]">Congé personnel</p>
-                        <p class="text-[#4B5563]">08/02/2025 → 08/02/2025</p>
+                        <p class="text-[var(--heading-color)]">Congé personnel</p>
+                        <p class="text-[var(--subHeading-color)]">08/02/2025 → 08/02/2025</p>
                     </div>
 
                 </div>

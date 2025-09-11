@@ -1,5 +1,16 @@
+:root{
+  --backgroung-color : #FAFAFA;
+  --heading-color : #111827;
+  --subHeading-color : #4B5563;
+  --btnEdit-color : #4B49AC;
+  --btnCancel-color : #f3f4f6;
+  --btnApprove-color :#504B8E;
+
+}
+
 .active-tab {
   color: #504B8E; 
   border-bottom: 2px solid #504B8E;
   padding-bottom: 5px
 }
+
