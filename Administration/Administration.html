@@ -42,7 +42,10 @@
     </div>
 
 
-    <div class="main  max-w-[1050px] w-full h-300 flex-col mx-auto">
+    <div class="main  max-w-[1050px] w-full min-h-screen flex-col mx-auto">
+
+
+
         <div class="heading flex  items-center justify-between mt-12 mb-10   ">
 
             <div class="flex-col ">
@@ -68,6 +71,9 @@
 
 
         </div>
+
+
+
         <div class="status-container grid grid-cols-4 gap-6 w-full mt-9 mb-10">
             <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
                 <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500 text-2xl">
@@ -75,7 +81,7 @@
                 </div>
                 <div class="pl-4">
                     <p class="text-[var(--subHeading-color)] text-sm">En attente</p>
-                    <p class="text-[var(--heading-color)] text-xl font-semibold">12</p>
+                    <p id="enAttenteContainer" class="text-[var(--heading-color)] text-xl font-semibold">12</p>
                 </div>
             </div>
             <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
@@ -84,7 +90,7 @@
                 </div>
                 <div class="pl-4">
                     <p class="text-[var(--subHeading-color)] text-sm">Approuvées</p>
-                    <p class="text-[var(--heading-color)] text-xl font-semibold">45</p>
+                    <p id="approvedContainer" class="text-[var(--heading-color)] text-xl font-semibold">45</p>
                 </div>
             </div>
             <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
@@ -93,7 +99,7 @@
                 </div>
                 <div class="pl-4">
                     <p class="text-[var(--subHeading-color)] text-sm">Refusées</p>
-                    <p class="text-[var(--heading-color)] text-xl font-semibold">3</p>
+                    <p id="refusedContainer" class="text-[var(--heading-color)] text-xl font-semibold">3</p>
                 </div>
             </div>
             <div class="card rounded-2xl bg-white shadow-md flex items-center p-5">
@@ -102,28 +108,27 @@
                 </div>
                 <div class="pl-4">
                     <p class="text-[var(--subHeading-color)] text-sm">Total ce mois</p>
-                    <p class="text-[var(--heading-color)] text-xl font-semibold">60</p>
+                    <p id="totalContainer" class="text-[var(--heading-color)] text-xl font-semibold">60</p>
                 </div>
             </div>
         </div>
 
 
 
-
-
-        <div class="flex flex-col mx-auto justify-start  w-full   h-210 rounded-2xl bg-white mb-10 shadow-md">
+        <div class="flex flex-col mx-auto justify-start  w-full   min-h-screen rounded-2xl bg-white mb-10 shadow-md">
 
 
             <div class="flex justify-between mb-4 mt-2 ">
                 <h2 class="p-4 pl-6 text-[17px] font-medium">Demandes de congés</h2>
                 <div class="btn-div flex flex-row pr-6 justify-between w-100">
-                    <select id="Status" onclick="selectedoption()"
+                    <select id="statusFilter" onclick="selectedoption()"
                         class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-38 h-10 p-2 mt-2 ">
                         <option value="Tous les statuts">Tous les statuts</option>
-                        <option value="En attente">En attente</option>
-                        <option value="Approuve">Approuve</option>
+                        <option value="pending">pending</option>
+                        <option value="approved">approved</option>
+                        <option value="rejected">rejected</option>
                     </select>
-                    <input type="text" id="Date-fin"
+                    <input type="text" id="searchInput"
                         class="bg-gray-50 border border-gray-300 text-[var(--heading-color)] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-54 h-10 p-2 mt-2 "
                         placeholder="Rechercher un employé..." required />
 
@@ -137,9 +142,9 @@
 
 
 
-            <div class="flex items-center gap-y-8 mx-auto flex-wrap w-[960px] p-8 justify-between ">
+            <div id="cardContainer" class="flex items-center gap-y-8 mx-auto flex-wrap w-[960px] p-8 justify-between ">
 
-                <div id="container"
+                <div 
                     class="bg-white border border-gray-200 shadow-sm rounded-2xl w-70 h-70 p-4 flex flex-col justify-between">
 
                     <div class="flex justify-between items-center mb-4">
@@ -343,11 +348,11 @@
             </div>
 
 
-            <div class="w-full h-[1px] bg-gray-200 mx-auto mb-4"></div>
+            <div class="w-full h-[1px] bg-gray-200 mx-auto "></div>
 
 
 
-            <div class="flex justify-between ">
+            <div class="flex justify-between pb-2 ">
                 <h2 class="p-2 pl-6 text-[var(--subHeading-color)] ">Affichage de 1 à 4 sur 60 demandes</h2>
                 <div class="btn-div flex flex-row justify-between w-90 pr-6">
                     <div
@@ -374,6 +379,8 @@
 
 
         </div>
+
+
     </div>
     </div>
 
@@ -422,6 +429,7 @@
 
    
    <script src="/main.js"></script>
+   <script src="Administration.js"></script>
 </body>
 
 </html>

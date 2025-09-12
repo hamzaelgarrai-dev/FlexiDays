@@ -131,9 +131,10 @@ RefuseContainer.innerHTML = `<div id="RefuseContainer" class="pl-4">
 }
 
 
-const congeInfoContainer = document.getElementById("congeInfoContainer")
+
 
 function showCongeStatus(userId = currentUserId){
+  const congeInfoContainer = document.getElementById("congeInfoContainer")
 
     const requests = apiData.requests;
 
@@ -384,7 +385,7 @@ document.addEventListener("click", (e) => {
 
   // Fill modal inputs
   document.getElementById("editRequestId").value = request.id;
-  document.getElementById("editType").value = request.type; // select
+  document.getElementById("editType").value = request.type; 
   document.getElementById("editStartDate").value = request.startDate;
   document.getElementById("editEndDate").value = request.endDate;
   document.getElementById("Justification").value = request.justification;

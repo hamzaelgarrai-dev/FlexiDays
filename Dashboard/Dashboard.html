@@ -8,13 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <link rel="stylesheet" href="/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
     <title>FlexiDays</title>
 </head>
 
@@ -66,13 +63,15 @@
                 <h2 class="p-4 pl-6">Notification Importantes</h2>
                 <div class="btn-div flex flex-row pr-6 ">
                     <div class="p-2">
-                        <button onclick="btnNotification()" class="leftbtn   mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-left text-2xl  text-gray-700"></i></button>
+                        <button onclick="btnNotification()" class="leftbtn   mt-2 cursor-pointer "><i
+                                class="fa-solid fa-square-caret-left text-2xl  text-gray-700"></i></button>
                     </div>
                     <div class="p-2">
-                        <button onclick="btnNotification()" class="rightbtn  mt-2 cursor-pointer "><i class="fa-solid fa-square-caret-right text-2xl text-gray-700"></i></button>
+                        <button onclick="btnNotification()" class="rightbtn  mt-2 cursor-pointer "><i
+                                class="fa-solid fa-square-caret-right text-2xl text-gray-700"></i></button>
                     </div>
-                    
-                    
+
+
                 </div>
 
             </div>
@@ -82,21 +81,25 @@
                 <div class="pr-2 pt-1"><i class="fa-solid fa-circle-exclamation"></i></div>
                 <div class="flex flex-col  text-[#4B5563] ">
                     <p class="">Fermeture exceptionnelle</p>
-                    <p class="">Les bureaux seront fermés le 15 mars 2025 pour maintenance. Planifiez vos congés en conséquence.</p>
+                    <p class="">Les bureaux seront fermés le 15 mars 2025 pour maintenance. Planifiez vos congés en
+                        conséquence.</p>
 
                 </div>
             </div>
 
         </div>
 
-        <div class="info-cards flex items-center justify-between  w-full h-60  mb-10 animate__animated animate__fadeInDown  ">
+
+        <div
+            class="info-cards flex items-center justify-between  w-full h-60  mb-10 animate__animated animate__fadeInDown  ">
+
 
             <div class="card w-80 h-50 rounded-2xl bg-white shadow-md">
                 <div class="flex justify-between items-center px-6 pt-5 pb-3 pr-6 border-b border-gray-200">
                     <h2 class=" text-lg font-semibold text-gray-800 ">Solde de Conge</h2>
                     <i class="fa-solid fa-calendar-days"></i>
                 </div>
-                
+
 
                 <div class="details flex justify-between px-6 py-4 text-gray-600">
                     <div class="flex flex-col gap-2">
@@ -151,24 +154,24 @@
                             <div class="bg-gray-400 w-2.5 h-10 rounded-full mr-2"></div>
                             <div class="flex flex-col">
                                 <p cl>Congés d’été</p>
-                            <p class="text-gray-900">15 - 30 juillet 2025</p>
+                                <p class="text-gray-900">15 - 30 juillet 2025</p>
 
                             </div>
-                            
+
 
                         </div>
-                         <div class="flex items-center">
+                        <div class="flex items-center">
                             <div class="bg-gray-400 w-2.5 h-10 rounded-full mr-2"></div>
                             <div class="flex flex-col">
                                 <p cl>Pont de mai</p>
-                            <p class="text-gray-900">1 - 2 mai 2025</p>
+                                <p class="text-gray-900">1 - 2 mai 2025</p>
 
                             </div>
-                            
+
 
                         </div>
 
-                       
+
 
 
 
@@ -187,41 +190,45 @@
 
         <div class="action w-full bg-white rounded-2xl shadow-lg p-6 mb-18">
 
-    <h2 class="text-xl font-semibold text-gray-800 mb-6">Actions rapides</h2>
+            <h2 class="text-xl font-semibold text-gray-800 mb-6">Actions rapides</h2>
 
-    <div class="btn-container flex flex-wrap justify-between gap-2">
+            <div class="btn-container flex flex-wrap justify-between gap-2">
 
-        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm   hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
-            <i class="fa-solid fa-plus text-2xl "></i>
-            <p class="pt-2  font-medium">Nouvelle Demande</p>
+                <div
+                    class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm   hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
+                    <i class="fa-solid fa-plus text-2xl "></i>
+                    <p class="pt-2  font-medium"><a href="/Demande_Conge/Demande-conge.html">Nouvelle Demande</a></p>
+                </div>
+
+                <div
+                    class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white  flex flex-col items-center justify-center cursor-pointer">
+                    <i class="fa-solid fa-calendar-days text-2xl "></i>
+                    <p class="pt-2  font-medium"><a href="/Mes_Conges/mes-conges.html">Mes congés</a></p>
+                </div>
+
+                <div
+                    class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
+                    <i class="fa-solid fa-chart-simple text-2xl "></i>
+                    <p class="pt-2  font-medium">Statistiques</p>
+                </div>
+
+                <div
+                    class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
+                    <i class="fa-solid fa-gear text-2xl "></i>
+                    <p class="pt-2  font-medium">Paramètres</p>
+                </div>
+
+            </div>
         </div>
 
-        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white  flex flex-col items-center justify-center cursor-pointer">
-            <i class="fa-solid fa-calendar-days text-2xl "></i>
-            <p class="pt-2  font-medium">Mes congés</p>
-        </div>
-
-        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
-            <i class="fa-solid fa-chart-simple text-2xl "></i>
-            <p class="pt-2  font-medium">Statistiques</p>
-        </div>
-
-        <div class="card w-60 h-32 rounded-2xl bg-white border border-gray-200 shadow-sm  hover:bg-[#4B49AC] hover:text-white flex flex-col items-center justify-center cursor-pointer">
-            <i class="fa-solid fa-gear text-2xl "></i>
-            <p class="pt-2  font-medium">Paramètres</p>
-        </div>
-
-    </div>
-</div>
 
 
 
 
 
 
-
-<script src="/main.js"></script>
-<script src="Dashboard.js"></script>
+        <script src="/main.js"></script>
+        <script src="Dashboard.js"></script>
 
 </body>
 
